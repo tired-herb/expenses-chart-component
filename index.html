@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body id="body">
+    <article id="article1">
+      <h1 id="numbersBalance">
+        <span id="myBalance">My balance</span><br />$921.48
+      </h1>
+      <button id="themeToggle" aria-label="modeToggle">
+        <img src="images/logo.svg" alt="modeToggle" />
+      </button>
+    </article>
+    <main>
+      <article id="article2">
+        <h1 id="spending">Spending - Last 7 days</h1>
+        <div class="chart-wrapper" aria-label="chart" role="img">
+          <canvas id="canvas"></canvas>
+        </div>
+      </article>
+      <hr class="line" />
+      <article id="article3">
+        <h1 id="totalWeek">
+          Total this week <br />
+          <span id="numbersWeek">$478.33</span>
+        </h1>
+        <p id="percent">
+          +2.4% <br />
+          <span id="lastMonth">from last month</span>
+        </p>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
